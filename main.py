@@ -49,7 +49,7 @@ def get_vocab_size(target_count, other_count):
 
     return len(all_grams)
 
-# This is the main function that gets the probability
+# This is the function that gets the probability
 def predict_probability(text, target_counts, other_counts, target_total, other_total, vocab_size):
     text = text.lower().strip()
     grams = make_ngrams(text)
